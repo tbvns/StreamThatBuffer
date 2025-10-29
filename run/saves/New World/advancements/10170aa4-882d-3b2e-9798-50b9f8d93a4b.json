@@ -1,0 +1,18 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-10-29 14:33:52 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:cold_ocean": "2025-10-29 14:34:22 +0100",
+      "minecraft:deep_cold_ocean": "2025-10-29 14:34:18 +0100",
+      "minecraft:frozen_ocean": "2025-10-29 14:33:58 +0100",
+      "minecraft:deep_frozen_ocean": "2025-10-29 14:34:17 +0100"
+    },
+    "done": false
+  },
+  "DataVersion": 3465
+}

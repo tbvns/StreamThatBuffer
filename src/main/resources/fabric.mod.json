@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "stream_that_bufer",
+  "version": "${version}",
+  "name": "Stream That Buffer",
+  "description": "Simple mod that allow you to stream Minecraft's framebuffer with HLS",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/stream_that_bufer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "xyz.tbvns.stream_that_bufer.client.Stream_that_buferDataGenerator"
+    ],
+    "client": [
+      "xyz.tbvns.stream_that_bufer.client.Stream_that_buferClient"
+    ],
+    "main": [
+      "xyz.tbvns.stream_that_bufer.Stream_that_bufer"
+    ]
+  },
+  "mixins": [
+    "stream_that_bufer.mixins.json",
+    {
+      "config": "stream_that_bufer.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
